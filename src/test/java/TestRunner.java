@@ -20,7 +20,7 @@ public class TestRunner extends Setup {
     @Test(priority = 2)
     public void CreateUser() throws InterruptedException{
         driver.get(baseUrl);
-        PMI page = new PMI(driver);
+        PIM page = new PIM(driver);
         page.CreateUser();
     }
 }
