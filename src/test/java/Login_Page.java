@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Login_Page {
 //properties
-    @FindBy(className = "login_input__2-vJx")
+    @FindBy(className = "oxd-input")
     List<WebElement> txtCreds;
 
     @FindBy(css = "[type=submit]")
