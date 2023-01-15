@@ -15,4 +15,4 @@ Functionality Test Automation
 5.Employee Information Search
 
 
-![](S:\Automation-project\Automation_Assessment\report.png)
+![](https://github.com/rafsanaKsamanta/Automation_Assessment/blob/main/report.png)
