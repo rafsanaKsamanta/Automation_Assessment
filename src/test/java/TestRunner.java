@@ -55,19 +55,20 @@ public class TestRunner extends Setup{
         List<WebElement> SaveBtn = driver.findElements(By.className("oxd-button"));
         SaveBtn.get(1).click();
 
-        List<WebElement> PIMClick2= driver.findElements(By.className("oxd-main-menu-item-wrapper"));
-        PIMClick2.get(1).click();
 
-        List<WebElement> assertion1 = driver.findElements(By.className("oxd-text--h6"));
-        String actualresult1 = assertion1.get(1).getText();
+        Thread.sleep(10000);
+
+        List<WebElement> assertion1 = driver.findElements(By.className("oxd-text"));
+        String actualresult1 = assertion1.get(12).getText();
         String expectedresult1 = "Rafsana Samanta";
-        String actualresult2 = assertion1.get(2).getText();
+        String actualresult2 = assertion1.get(13).getText();
         String expectedresult2 = "Personal Details";
 
         Assert.assertEquals(actualresult1,expectedresult1);
         Assert.assertEquals(actualresult2,expectedresult2);
 
-
+        List<WebElement> PIMClick2= driver.findElements(By.className("oxd-main-menu-item-wrapper"));
+        PIMClick2.get(1).click();
 
 
 
@@ -83,7 +84,7 @@ public class TestRunner extends Setup{
         List<WebElement> SearchBtn = driver.findElements(By.className("oxd-button"));
         SearchBtn.get(1).click();
 
-        Thread.sleep(2000);
+        Thread.sleep(5000);
 
         List<WebElement> assertion2 = driver.findElements(By.className("oxd-text--span"));
         String actualResult = assertion2.get(11).getText();
@@ -92,15 +93,5 @@ public class TestRunner extends Setup{
         Assert.assertEquals(actualResult,expectedResult);
 
     }
-
-
-
-
-
-
-
-
-
-
 
 }
