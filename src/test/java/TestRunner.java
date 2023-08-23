@@ -10,6 +10,9 @@ public class TestRunner extends Setup{
 
     String baseUrl = "https://opensource-demo.orangehrmlive.com/";
 
+
+    //write test cases from here
+
     @Test(priority = 1,testName = "TC001", description = "User can login successfully")
 
     public void doLogin(){
@@ -46,7 +49,7 @@ public class TestRunner extends Setup{
         //username password
         Thread.sleep(2000);
         List<WebElement> UserNamePass = driver.findElements(By.className("oxd-input"));
-        UserNamePass.get(5).sendKeys("rafsana3");
+        UserNamePass.get(5).sendKeys("rafsana4");
         UserNamePass.get(6).sendKeys("Ss@12345");
         UserNamePass.get(7).sendKeys("Ss@12345");
 
